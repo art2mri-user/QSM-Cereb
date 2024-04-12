@@ -100,7 +100,7 @@ deactivate
   - After that, a folder named ***vertebral_labeling.simg*** will appear on the **QSM-Cereb** folder. Please don't rename it.  
   
 
-## 4) Running Enigma-SC  
+## 4) Running QSM-Cereb  
 
 To run the **QSM-Cereb** software and open the interface, open a terminal **inside of the QSM-Cereb folder** and type:  
 
@@ -111,7 +111,7 @@ python3 QSM-cereb.py
 If you are running **QSM-Cereb** in a server, or if you couldn`t install all the packages listed on the section **2) Download and Install QSM-Cereb**, you can run the pipeline without opening the GUI, via command line, by opening a terminal **inside of the QSM-Cereb folder** and typing:  
 
  ```bash 
-./nographmode.sh
+python3 nographmode.py  
 ```  
 [command line tutorial](/command%20line%20TUTORIAL.md)  
  
