@@ -845,7 +845,7 @@ def container_ext(choice):
 #############################
 
 def open_tutorial():
-    url = "https://github.com/art2mri/Enigma-SC" 
+    url = "https://github.com/art2mri/QSM-Cereb" 
     webbrowser.open_new(url)
     
 #############################	
