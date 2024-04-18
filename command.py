@@ -270,13 +270,13 @@ def docker():
 			os.system('docker rm qsm_cereb')																	
 	try:
     		subprocess.run('nvidia-smi', check=True)
-    		docker_command = 'docker run -itd --gpus all --ipc=host --name qsm_cereb art2mri/qsm_cereb:1.0'
+    		docker_command = 'docker run -itd --gpus all --ipc=host --name qsm_cereb art2mri/qsm_cereb:2.0'
 	except FileNotFoundError as gpu_error:
     		print(f"Error checking for GPU: {gpu_error}")
-    		docker_command = 'docker run -itd --ipc=host --name qsm_cereb art2mri/qsm_cereb:1.0'
+    		docker_command = 'docker run -itd --ipc=host --name qsm_cereb art2mri/qsm_cereb:2.0'
 	except subprocess.CalledProcessError as gpu_error:
     		print(f"Error checking for GPU: {gpu_error}")
-    		docker_command = 'docker run -itd --ipc=host --name qsm_cereb art2mri/qsm_cereb:1.0'	
+    		docker_command = 'docker run -itd --ipc=host --name qsm_cereb art2mri/qsm_cereb:2.0'	
 	try:
     		subprocess.run(docker_command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True)
 	except subprocess.CalledProcessError as docker_error:
@@ -285,8 +285,8 @@ def docker():
 		subprocess.run('sudo -S '+docker_command2, shell=True, check=True, input=password.encode('utf-8'))	
 		print(f"Error running Docker command: {docker_error}")
     		   		    			
-	loww1='docker run -itd --gpus all --ipc=host --name qsm_cereb art2mri/qsm_cereb:1.0'
-	loww2='sudo -S docker run -itd --gpus all --ipc=host --name qsm_cereb art2mri/qsm_cereb:1.0'
+	loww1='docker run -itd --gpus all --ipc=host --name qsm_cereb art2mri/qsm_cereb:2.0'
+	loww2='sudo -S docker run -itd --gpus all --ipc=host --name qsm_cereb art2mri/qsm_cereb:2.0'
 	try:
 		subprocess.run(loww1, shell=True, check=True, stderr=subprocess.DEVNULL)
 	except subprocess.CalledProcessError as e:
