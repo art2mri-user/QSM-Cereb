@@ -11,4 +11,4 @@ An optimized deep learning-based method for dentate nucleus labeling.
 ## Read these before you start:    
 [Installation Instructions](/Installation%20Instructions.md)
 
-!["qsm interface"](img/screen.png)
+!["qsm interface"](img/screen1.png)
