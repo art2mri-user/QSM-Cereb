@@ -75,14 +75,14 @@ deactivate
   
   If you have already correctly installed the Docker Engine, run the following command on Linux Terminal:
    - ```bash
-     docker pull art2mri/qsm_cereb:1.0
+     docker pull art2mri/qsm_cereb:2.0
      ```
      
   ### Singularity
 
   If you have correctly installed Singularity, open the Linux terminal **inside of the QSM-Cereb** and run the following command:
   - ```bash
-    singularity build --sandbox qsm_cereb.simg docker://art2mri/qsm_cereb:1.0
+    singularity build --sandbox qsm_cereb.simg docker://art2mri/qsm_cereb:2.0
     ```
   - ```bash
     chmod -R 777 qsm_cereb.simg
@@ -92,7 +92,7 @@ deactivate
 
   If you have correctly installed Apptainer, open the Linux terminal **inside of the QSM-Cereb folder** and run the following command:
   - ```bash
-    apptainer build --sandbox qsm_cereb.simg docker://art2mri/qsm_cereb:1.0
+    apptainer build --sandbox qsm_cereb.simg docker://art2mri/qsm_cereb:2.0
     ```
   - ```bash
     chmod -R 777 qsm_cereb.simg
