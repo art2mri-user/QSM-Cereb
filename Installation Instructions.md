@@ -111,7 +111,7 @@ python3 QSM-cereb.py
 If you are running **QSM-Cereb** in a server, or if you couldn`t install all the packages listed on the section **2) Download and Install QSM-Cereb**, you can run the pipeline without opening the GUI, via command line, by opening a terminal **inside of the QSM-Cereb folder** and typing:  
 
  ```bash 
-python3 nographmode.py  
+python3 command.py  
 ```  
 [command line tutorial](/command%20line%20TUTORIAL.md)  
  
